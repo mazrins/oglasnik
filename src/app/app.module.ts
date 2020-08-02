@@ -18,6 +18,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+import { CardsComponent } from './cards/cards.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+
+
+
 
 @NgModule({
   declarations: [
@@ -25,6 +32,7 @@ import { HomeComponent } from './home/home.component';
     NavigationComponent,
     PageNotFoundComponent,
     HomeComponent,
+    CardsComponent,
 
   ],
   imports: [
@@ -41,7 +49,10 @@ import { HomeComponent } from './home/home.component';
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule,
+    MatMenuModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
